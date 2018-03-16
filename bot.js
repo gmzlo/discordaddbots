@@ -1114,5 +1114,5 @@ app.listen(port, () => {
 
 // pings server every 15 minutes to prevent dynos from sleeping
 setInterval(() => {
- http.get('http://nekods.herokuapp.com');
+ http.get('http://avastation.herokuapp.com');
 }, 900000);

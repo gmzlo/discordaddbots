@@ -1,3 +1,31 @@
+const { Client, Util, bot, Mybot } = require('discord.js');
+const fs = require("fs");
+const request = require("request").defaults({encoding: null});
+
+const client = new Client({ disableEveryone: false });
+
+const newUsers = [];
+
+require("./functions/functions.js")(client);
+
+fs.readdir("./events/", (err, files) => {
+	console.log(`Logging in Neko
+	  \\    /\\
+	   )  ( \')
+	   (  /  )
+		\\(__)|
+	Adding The following events`);
+		console.log(`${files.map(g => `${g.split(".")[0]}`).join(", ")}`);
+		if (err) return console.error(err);
+		files.forEach(file => {
+			let eventFunction = require(`./events/${file}`);
+			let eventName = file.split(".")[0];
+			client.on(eventName, (...args) => eventFunction.run(client, ...args));
+		});
+		console.log(`Added ${files.length} events.`);
+});
+
+client.login(process.env.TOKEN);
 
 // Web app (Express + EJS)
 const http = require('http');

@@ -36,7 +36,7 @@ inline: true
 }});
     // Create an event listener for new guild members		
 } else {
-	let role = member.guild.roles.find("name", "no-name-t");
+	let role = member.guild.roles.find("name", "no-name");
 	member.addRole(role).catch(console.error);	
 	const channel = member.guild.channels.find('name', 'no-name-t')
 	if (!channel) return;

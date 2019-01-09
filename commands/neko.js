@@ -1,8 +1,8 @@
-const NekoJS = require("neko.js");
+const NekoJS = require("nekos.life");
 
 exports.run = (client, message, args) => {
-	let nekoclient = new NekoJS.Client();
-	nekoclient.neko().then(function(nekoImg){
+	const sfw = new NekoJS();
+	sfw.getSFWNeko().then(neko => {
 	message.channel.send({embed: {
 	color: client.getRandomColor(),
 	author: {
@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
 		icon_url: client.user.avatarURL
 	},
 	image: {
-		url: nekoImg.neko
+		url: neko.url
 	}
 }
 });

@@ -18,7 +18,7 @@
     "discord.js": "^11.2.1",
     "request": "2.81.0",
     "install": "^0.10.2",
-    "neko.js": "^1.9.4",
+    "nekos.life": "^1.1.5",
     "node-opus": "^0.2.7",
    "ffmpeg-binaries": "^3.2.2-3",
     "opusscript": "0.0.3",

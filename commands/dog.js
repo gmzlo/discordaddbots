@@ -1,16 +1,16 @@
-const randomPuppy = require('random-puppy');
+const NekoJS = require("nekos.life");
 
- exports.run = (client, message, args) => {
-randomPuppy()
-    .then(url => {
+exports.run = (client, message, args) => {
+	const sfw = new NekoJS();
+	sfw.getSFWWoof().then(woof => {
     message.channel.send({embed: {
 	color: client.getRandomColor(),
 	author: {
-		name: "Dogs 🐺",
+		name: "Woof 🐺",
 		icon_url: client.user.avatarURL
 	},
 	image: {
-		url: url
+		url: woof.url
 	}
 }
 });

@@ -48,6 +48,34 @@ exports.run = (client, message, args, chala, langu) => {
           value: "anata kissu wa selecto useru nemu"
         },
 		{
+          name: "tickle",
+          value: "anata tickleu wa selecto useru nemu"
+        },
+		{
+          name: "poke",
+          value: "anata pokeu wa selecto useru nemu"
+        },
+		{
+          name: "feed",
+          value: "anata feedu wa selecto useru nemu"
+        },
+		{
+          name: "cuddle",
+          value: "anata cuddleu wa selecto useru nemu"
+        },
+		{
+          name: "baka",
+          value: "anata bakau wa selecto useru nemu"
+        },
+		{
+          name: "slap",
+          value: "anata slapu wa selecto useru nemu"
+        },
+		{
+          name: "smug",
+          value: "anata wa smug"
+        },		
+		{
           name: "serverinfo",
           value: "watashi wa posto inoforumaru no serveru"
         },

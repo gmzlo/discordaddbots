@@ -48,6 +48,34 @@ exports.run = (client, message, args, chala, langu) => {
           value: "you kiss select user name"
         },
 		{
+          name: "tickle",
+          value: "you tickle select user name"
+        },
+		{
+          name: "poke",
+          value: "you poke select user name"
+        },
+		{
+          name: "feed",
+          value: "you feed select user name"
+        },
+		{
+          name: "cuddle",
+          value: "you cuddle select user name"
+        },
+		{
+          name: "baka",
+          value: "you baka select user name"
+        },
+		{
+          name: "slap",
+          value: "you slap select user name"
+        },
+		{
+          name: "smug",
+          value: "you smug for you"
+        },		
+		{
           name: "serverinfo",
           value: "post inoformation on server"
         },

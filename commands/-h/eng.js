@@ -36,45 +36,30 @@ exports.run = (client, message, args, chala, langu) => {
           value: "post avatar from select from u user link and image"
         },
 		{
-          name: "pat",
-          value: "you pat select user name"
-        },
-		{
-          name: "hug",
-          value: "you hug select user name"
-		},
-		{
-          name: "kiss",
-          value: "you kiss select user name"
-        },
-		{
-          name: "tickle",
-          value: "you tickle select user name"
-        },
-		{
-          name: "poke",
-          value: "you poke select user name"
-        },
-		{
-          name: "feed",
-          value: "you feed select user name"
-        },
-		{
-          name: "cuddle",
-          value: "you cuddle select user name"
-        },
-		{
-          name: "baka",
-          value: "you baka select user name"
-        },
-		{
-          name: "slap",
-          value: "you slap select user name"
-        },
-		{
-          name: "smug",
-          value: "you smug for you"
-        },		
+		name: `social 👫`,
+		value: `
+		**pat**
+		you pat select user name
+		**hug**
+		you hug select user name
+		**kiss**
+		you kiss select user name
+		**tickle**
+		you tickle select user name
+		**poke**
+		you poke select user name
+		**feed**
+		you feed select user name
+		**cuddle**
+		you cuddle select user name
+		**baka**
+		you baka select user name
+		**slap**
+		you slap select user name
+		**smug**
+		you smug for you
+		`
+		},	
 		{
           name: "serverinfo",
           value: "post inoformation on server"

@@ -36,45 +36,30 @@ exports.run = (client, message, args, chala, langu) => {
           value: "watashi posto selecto avataro usero linku ono imago"
         },
 		{
-          name: "pat",
-          value: "anata patu wa selecto useru nemu"
-        },
-		{
-          name: "hug",
-          value: "anata hugu wa selecto useru nemu"
+		name: `socialu 👫`,
+		value: `
+		**pat**
+		anata patu wa selecto useru nemu
+		**hug**
+		anata hugu wa selecto useru nemu
+		**kiss**
+		anata kissu wa selecto useru nemu
+		**tickle**
+		anata tickleu wa selecto useru nemu
+		**poke**
+		anata pokeu wa selecto useru nemu
+		**feed**
+		anata feedu wa selecto useru nemu
+		**cuddle**
+		anata cuddleu wa selecto useru nemu
+		**baka**
+		anata bakau wa selecto useru nemu
+		**slap**
+		anata slapu wa selecto useru nemu
+		**smug**
+		anata wa smug
+		`
 		},
-		{
-          name: "kiss",
-          value: "anata kissu wa selecto useru nemu"
-        },
-		{
-          name: "tickle",
-          value: "anata tickleu wa selecto useru nemu"
-        },
-		{
-          name: "poke",
-          value: "anata pokeu wa selecto useru nemu"
-        },
-		{
-          name: "feed",
-          value: "anata feedu wa selecto useru nemu"
-        },
-		{
-          name: "cuddle",
-          value: "anata cuddleu wa selecto useru nemu"
-        },
-		{
-          name: "baka",
-          value: "anata bakau wa selecto useru nemu"
-        },
-		{
-          name: "slap",
-          value: "anata slapu wa selecto useru nemu"
-        },
-		{
-          name: "smug",
-          value: "anata wa smug"
-        },		
 		{
           name: "serverinfo",
           value: "watashi wa posto inoforumaru no serveru"

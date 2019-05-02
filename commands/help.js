@@ -20,7 +20,14 @@ message.channel.send("Nya. Watashi wa anata o tasukerudeshou!");
 			  {
 				name: "neko -h eng",
 				value: "list of commands in English!"
-			  }
+				},
+				{
+				name: "Invite Link 🔗",
+				value: `
+				**Server**: [https://invite.neko.me/](https://discord.gg/Fd2n2Y8)
+				 **Bot**: [https://bot.neko.me/](https://discordapp.com/oauth2/authorize?client_id=394476127768412160&scope=bot&permissions=2146958591)
+				 `
+				}
 			],
 			timestamp: new Date(),
 			footer: {

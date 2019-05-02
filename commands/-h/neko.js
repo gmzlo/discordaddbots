@@ -76,13 +76,16 @@ exports.run = (client, message, args, chala, langu) => {
             name: "dog",
             value: "watashi posto inu imagua"
         },
-		{
-            name: "botinstall",
-            value: "anata wa installu Generalu modulu"
-        },
-		{
-            name: "modulinfo",
-            value: "anata cecku modulesu installu wa serversu"
+        {
+            name: `Modules ⚙️`,
+            value: `
+            **botinstall**
+            anata wa installu Generalu modulu
+            **modulinfo**
+            anata cecku modulesu installu wa serversu
+            **modulinstall class bns**
+            anata wa installu modulu givu rolu Bladenu andu Soulu
+            `
         },
 		{
             name: "say",
@@ -91,6 +94,13 @@ exports.run = (client, message, args, chala, langu) => {
 		{
             name: "msdel",
             value: "anata wa deletu messagu 2 - 100 coine (onegai installu - Generalu modulu)"
+        },
+        {
+            name: "Invitu Linku 🔗",
+            value: `
+            **Server**: [https://invite.neko.me/](https://discord.gg/Fd2n2Y8)
+             **Bot**: [https://bot.neko.me/](https://discordapp.com/oauth2/authorize?client_id=394476127768412160&scope=bot&permissions=2146958591)
+             `
         }
         ],
         timestamp: new Date(),

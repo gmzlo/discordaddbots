@@ -76,13 +76,16 @@ exports.run = (client, message, args, chala, langu) => {
             name: "dog",
             value: "post random dog image"
         },
-		{
-            name: "botinstall",
-            value: "install General bot module"
-        },
-		{
-            name: "modulinfo",
-            value: "ceck modules install from servers"
+        {
+            name: `Modules ⚙️`,
+            value: `
+            **botinstall**
+            install General bot module
+            **modulinfo**
+            ceck modules install from servers
+            **modulinstall class bns**
+            install modul give roles Blade and Soul
+            `
         },
 		{
             name: "say",
@@ -91,6 +94,13 @@ exports.run = (client, message, args, chala, langu) => {
 		{
             name: "msdel",
             value: "delete message 2 - 100 coine (neede bot install - General module)"
+        },
+        {
+            name: "Invite Link 🔗",
+            value: `
+            **Server**: [https://invite.neko.me/](https://discord.gg/Fd2n2Y8)
+             **Bot**: [https://bot.neko.me/](https://discordapp.com/oauth2/authorize?client_id=394476127768412160&scope=bot&permissions=2146958591)
+             `
         }
         ],
         timestamp: new Date(),

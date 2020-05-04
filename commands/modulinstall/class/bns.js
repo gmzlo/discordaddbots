@@ -9,6 +9,7 @@ exports.run = async(client, message, member) => {
     const sf = message.guild.roles.find("name", "SF");
     const dm = message.guild.roles.find("name", "DM");
     const gun = message.guild.roles.find("name", "GUN");
+	const arh = message.guild.roles.find("name", "ARH");
     const sum = message.guild.roles.find("name", "SUM");
     var mdn = null;
     var cmn = null;
@@ -22,7 +23,9 @@ exports.run = async(client, message, member) => {
     var sfn = null;
     var dmn = null;
     var gunn = null;
+	var arhn = null;
     var sumn = null;
+	
     
     const rolcen = message.guild.channels.find("name", "roles");
     var rolcenn = null;
@@ -118,6 +121,15 @@ exports.run = async(client, message, member) => {
     mdn += 1;
     gunn = 0;	
     };
+	if (arh === null){
+    message.channel.send(`Modul **ARH**: :x: notu inustallu`);
+    mdn += 0;
+    arhn += 1;	
+    } else {
+    message.channel.send(`Modul **ARH**: :white_check_mark: inustallu`);
+    mdn += 1;
+    arhn = 0;	
+    };   
     if (sum === null){
     message.channel.send(`Modul **SUM**: :x: notu inustallu`);
     mdn += 0;
@@ -128,17 +140,18 @@ exports.run = async(client, message, member) => {
     sumn = 0;	
     };   
     console.log(`inustallu modulu coinu: ${mdn}
-    BM coinu: ${bmn}
-    LSM coinu: ${lsmn}
-    SIN coinu: ${sinn}
-    WL coinu: ${wln}
-    FOR coinu: ${forsn}
-    WAR coinu: ${warn}
-    KFM coinu: ${kfmn}
-    SF coinu: ${sfn}
-    DM coinu: ${dmn}
-    GUN coinu: ${gunn}
-    SUM coinu: ${sumn}
+   BM coinu: ${bmn}
+   LSM coinu: ${lsmn}
+   SIN coinu: ${sinn}
+   WL coinu: ${wln}
+   FOR coinu: ${forsn}
+   WAR coinu: ${warn}
+   KFM coinu: ${kfmn}
+   SF coinu: ${sfn}
+   DM coinu: ${dmn}
+   GUN coinu: ${gunn}
+   ARH coinu: ${arhn}
+   SUM coinu: ${sumn}
     `);
     if (mdn === 0) {
     message.guild.createRole({
@@ -199,20 +212,26 @@ exports.run = async(client, message, member) => {
     })
     .then(role => console.log(`Created new role with name ${role.name} and color ${role.color}`))
     .catch(console.error)
+	message.guild.createRole({
+    name: 'ARH',
+    color: '#f15a18',    
+    })
+    .then(role => console.log(`Created new role with name ${role.name} and color ${role.color}`))
+    .catch(console.error)
     message.guild.createRole({
     name: 'SUM',
     color: '#ecdf09',    
     })
     .then(role => console.log(`Created new role with name ${role.name} and color ${role.color}`))
     .catch(console.error)
-    message.channel.send({embed:{
-                
+	message.channel.send({embed:{
+               
     "description": ":white_check_mark:  Classu BnSu modulu botu installu",
     "color": 1693449,
     }
     });
     };
-    if (mdn === 1 || mdn === 2 || mdn === 3 || mdn === 4 || mdn === 5 || mdn === 7 || mdn === 8 || mdn === 9 || mdn === 10)	{
+    if (mdn === 1 || mdn === 2 || mdn === 3 || mdn === 4 || mdn === 5 || mdn === 7 || mdn === 8 || mdn === 9 || mdn === 10 || mdn === 11)	{
     message.channel.send(`notu allu modulesu installu, inustallu startu :repeat:`);
     if (bmn === 1){
     message.guild.createRole({
@@ -384,6 +403,23 @@ exports.run = async(client, message, member) => {
     } else{
     message.channel.send(`..........`);
     }
+	if(arhn === 1){
+    message.guild.createRole({
+    name: 'ARH',
+    color: '#f15a18',    
+    })
+    .then(role => console.log(`Created new role with name ${role.name} and color ${role.color}`))
+    .catch(console.error)
+    message.channel.send({embed:{
+                
+    "description": ":white_check_mark:  GUNu modulu botu installu",
+    "color": 1693449,
+    }
+    }).then(msg => msg.delete(1000));
+    message.channel.send(`...........`);
+    } else{
+    message.channel.send(`...........`);
+    }
     if(sumn === 1){
     message.guild.createRole({
     name: 'SUM',
@@ -397,7 +433,7 @@ exports.run = async(client, message, member) => {
     "color": 1693449,
     }
     }).then(msg => msg.delete(1000));
-    message.channel.send(`...........`)
+    message.channel.send(`............`)
     message.channel.send({embed:{
                 
     "description": ":white_check_mark:  Classu BnSu modulu botu installu",
@@ -405,7 +441,7 @@ exports.run = async(client, message, member) => {
     }
     });
     } else{
-    message.channel.send(`...........`)
+    message.channel.send(`............`)
     message.channel.send({embed:{
                 
     "description": ":white_check_mark:  Classu BnSu modulu botu installu",
@@ -414,7 +450,7 @@ exports.run = async(client, message, member) => {
     });
     };		
         }; 
-        if ( mdn === 11){
+        if ( mdn === 12){
         message.channel.send({embed:{
                 
         "description": ":x: Classu BnSu modulu botu installu, installu modules notu startu",
@@ -444,7 +480,7 @@ exports.run = async(client, message, member) => {
     }
     });
     setTimeout(function() {
-        message.guild.channels.find("name", "roles").send(`hello nya itsu Roleu Verificationu nya Watashi wa givu roleu you nidu tachu Reactu`).then(function (message) {message.react("571028462912012328"), message.react("571028463000092692"), message.react("571028462597570561"), message.react("571028463063138307"), message.react("571028462719205397"), message.react("571028462937309214"), message.react("571028462949761024"), message.react("571028462941503489"), message.react("571028462954086410"), message.react("571028462983446528"), message.react("571028462593376257")})
+        message.guild.channels.find("name", "roles").send(`hello nya itsu Roleu Verificationu nya Watashi wa givu roleu you nidu tachu Reactu`).then(function (message) {message.react("571028462912012328"), message.react("571028463000092692"), message.react("571028462597570561"), message.react("571028463063138307"), message.react("571028462719205397"), message.react("571028462937309214"), message.react("571028462949761024"), message.react("571028462941503489"), message.react("571028462954086410"), message.react("571028462983446528"), message.react("571028462593376257"), message.react("693865826721333348")})
     }, 10000) 
 }else{
     message.channel.send({embed:{

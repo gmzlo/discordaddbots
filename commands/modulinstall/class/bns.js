@@ -9,7 +9,7 @@ exports.run = async(client, message, member) => {
     const sf = message.guild.roles.find("name", "SF");
     const dm = message.guild.roles.find("name", "DM");
     const gun = message.guild.roles.find("name", "GUN");
-	const arh = message.guild.roles.find("name", "ARH");
+    const arh = message.guild.roles.find("name", "ARH");
     const sum = message.guild.roles.find("name", "SUM");
     var mdn = null;
     var cmn = null;
@@ -23,7 +23,7 @@ exports.run = async(client, message, member) => {
     var sfn = null;
     var dmn = null;
     var gunn = null;
-	var arhn = null;
+    var arhn = null;
     var sumn = null;
 	
     
@@ -121,7 +121,7 @@ exports.run = async(client, message, member) => {
     mdn += 1;
     gunn = 0;	
     };
-	if (arh === null){
+    if (arh === null){
     message.channel.send(`Modul **ARH**: :x: notu inustallu`);
     mdn += 0;
     arhn += 1;	
@@ -212,7 +212,7 @@ exports.run = async(client, message, member) => {
     })
     .then(role => console.log(`Created new role with name ${role.name} and color ${role.color}`))
     .catch(console.error)
-	message.guild.createRole({
+    message.guild.createRole({
     name: 'ARH',
     color: '#f15a18',    
     })
@@ -403,7 +403,7 @@ exports.run = async(client, message, member) => {
     } else{
     message.channel.send(`..........`);
     }
-	if(arhn === 1){
+    if(arhn === 1){
     message.guild.createRole({
     name: 'ARH',
     color: '#f15a18',    

@@ -18,6 +18,7 @@ let rolWAR = reaction.message.guild.roles.find("name", "WAR");
 let rolKFM = reaction.message.guild.roles.find("name", "KFM");
 let rolDM = reaction.message.guild.roles.find("name", "DM");
 let rolGUN = reaction.message.guild.roles.find("name", "GUN");
+let rolARH = reaction.message.guild.roles.find("name", "ARH");
 if(reaction.emoji.name === "WL"){
     member.removeRole(rolWL)
 } else if(reaction.emoji.name === "LSM"){
@@ -40,5 +41,7 @@ if(reaction.emoji.name === "WL"){
     member.removeRole(rolDM)
 } else if(reaction.emoji.name === "GUN"){
     member.removeRole(rolGUN)
+} else if(reaction.emoji.name === "ARH"){
+    member.removeRole(rolARH)
 }
 }

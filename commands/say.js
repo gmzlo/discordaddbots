@@ -1,6 +1,5 @@
 exports.run = (client, message, args) => {
     message.delete();
-	exports.run = (client, message, args) => {
 	if (message.guild.roles.find("name", "Admin") === null || message.guild.roles.find("name", "Moder") === null || message.guild.roles.find("name", "Anonser") === null )return message.channel.send({embed:{
 			
                 "description": ":x: Generalu modulu botu notu installu onegai use commando botinstall",
@@ -78,5 +77,4 @@ exports.run = (client, message, args) => {
 	],
 }
 }); return;}
-}
 }
